@@ -1,0 +1,176 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+.cabec{
+    padding: 10%;
+    background-image: url(../img/central-de-atendimento.jpg);
+    background-repeat: round;
+    color: rgb(10, 10, 10);
+}
+span{
+    color: rgb(84, 86, 87);
+}
+i{
+    text-align: center;
+}
+.prat{
+    background-color: rgb(84, 86, 87);
+    color: white;
+}
+h1{
+    text-align: center;
+}
+h1::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite ;
+    animation-delay: 0.2s;
+}
+
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+} 
+h4{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+h6{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.barra{
+    border-radius: 20px 20px 20px 20px black;
+    padding-bottom: 20%;
+}
+#linha-vertical {
+    height: 200px;
+    border-right: 1px solid red;
+}
+#linha-horizontal {
+    width: 300px;
+    border: 1px solid #000;
+}
+.msg {
+    align-items: center;
+    background:  rgb(84, 86, 87);
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+  }
+  
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+.aco{
+    text-align: center;
+    background-color:  rgb(84, 86, 87);
+    color: white;
+}
+.aco2{
+    text-align: center;
+    background-color:  rgba(84, 86, 87, 0.959);
+    color: white;
+}
+.neg{
+  background-color:  rgb(84, 86, 87);
+  color: white;
+}
+.call-action{
+  background-color:  rgb(84, 86, 87);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 5px 5px gray;
+  color: white;
+}
+#msg1{
+  margin-top: 5%;
+}
+.info{
+  background-color:  rgb(84, 86, 87);
+  color: white;
+}
+#foms{
+  display: block;
+}
+#foms li{
+  margin:1%;
+}
+#foms li:hover{
+  background-color: rgb(84, 86, 87);
+}
+footer{
+    background-color: rgb(6, 82, 247);
+    color: white;
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+.footer-copyright{
+    background-color: rgba(128, 128, 128, 0.836);
+}
+@keyframes pisca {
+    0% {
+        opacity: 1;
+    }
+   50% {
+      opacity: 0;
+    }
+}
